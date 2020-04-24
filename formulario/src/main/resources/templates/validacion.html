@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+    <div>
+        <span th:text="${nameerr}"></span>
+        <br>
+        <br>
+        <span th:text="${lastnameerr}"></span>
+        <span th:text="${birth}"></span>
+        <span th:text="${birthPerr}"></span>
+        <span th:text="${schoolerr}"></span>
+        <span th:text="${phoneerr}"></span>
+        <span th:text="${cellphoneerr}"></span>
+    </div>
+    <br>
+    <br>
+    <div>
+        <form action="#" th:action="@{/agregar}" th:object="${alumno}" method="post">
+            <input type="submit" value="Ingresar nuevo alumno">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de alumnos</title>
+</head>
+<body>
+    <h1>Ingreso de nuevo alumno</h1>
+
+    <form action="#" th:action="@{/validacion}" th:object="${alumno}" method="post">
+        
+        <label for="name">Nombres: </label>
+        <input type="text" name="name" id="name" th:field="*{name}">
+        <br>
+        <br>
+        <label for="lastname">Apellidos: </label>
+        <input type="text" id="lastname" name="lastname" th:field="*{lastname}">
+        <br>
+        <br>
+        <label for="birth">Fecha de Nacimiento: </label>
+        <input type="date" name="birth" id="birth" th:field="*{birth}" min="2003-01-01">
+        <br>
+        <br>
+        <label for="birthp">Lugar de Nacimiento: </label>
+        <input type="text" name="birthp" id="birthp" th:field="*{birthPlace}">
+        <br>
+        <br>
+        <label for="school">Nombre de colegio: </label>
+        <input type="text" name="school" id="school" th:field="*{schoolName}">
+        <br>
+        <br>
+        <label for="phone">Numero de telefono (fijo): </label>
+        <input type="text" name="phone" id="phone" th:field="*{phone}">
+        <br>
+        <br>
+        <label for="cellphone">Numero de telefono (celular): </label>
+        <input type="text" name="cellphone" id="cellphone" th:field="*{cellPhone}">
+        <br>
+        <br>
+        <input type="submit" value="Save Student">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
