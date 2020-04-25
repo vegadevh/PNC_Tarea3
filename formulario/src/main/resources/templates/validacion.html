@@ -19,23 +19,21 @@
             <li><span th:text="${cellphoneerr}"></span></li>
             </ul>
         -->
-        <span th:text="${nameerr}"></span>
-        <br>
-        <span th:text="${lastnameerr}"></span>
-        <br>
-        <span th:text="${birth}"></span>
-        <br>
-        <span th:text="${birthPerr}"></span>
-        <br>
-        <span th:text="${schoolerr}"></span>
-        <br>
-        <span th:text="${phoneerr}"></span>
-        <br>
-        <span th:text="${cellphoneerr}"></span>
-        <br>
+        <p><span th:text="${nameerr}"></span></p>
+
+        <p><span th:text="${lastnameerr}"></span></p>
+
+        <p><span th:text="${birth}"></span></p>
+
+        <p><span th:text="${birthPerr}"></span></p>
+
+        <p><span th:text="${schoolerr}"></span></p>
+
+        <p><span th:text="${phoneerr}"></span></p>
+
+        <p><span th:text="${cellphoneerr}"></span></p>
+
     </div>
-    <br>
-    <br>
     <div>
         <form action="#" th:action="@{/agregar}" th:object="${alumno}" method="post">
             <input type="submit" value="Ingresar nuevo alumno">
